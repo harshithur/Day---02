@@ -1,56 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StoHRM Login</title>
+  <title>To-Do List</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Left Panel -->
-  <div class="left">
-    <!-- Replace with actual SVG/illustration -->
-    <img src="https://myhr.stohrm.com/images/diy/login-left-image.png" alt="Illustration">
-    <h2>Unleashing boundless opportunities with a unified HRMS solution.</h2>
-    <p>
-      Designed specifically for enterprises, our comprehensive HRMS suite empowers 
-      you to streamline your daily HR operations, enhance human interactions, 
-      and gain valuable insights for informed decision-making.
-    </p>
+  <div class="container">
+    <h2>Tasks - <span id="taskCount" >0</span></h2>
+    <div>
+      <input type="text" id="taskInput" placeholder="Add a new task">
+      <button class="add" onclick="addTask()">+</button>
+    </div>
+    <div id="taskList"></div>
   </div>
 
-  <!-- Right Panel -->
-  <div class="right">
-    <div class="login-box">
-      <!-- Replace with actual StoHRM logo -->
-      <img src="https://myhr.stohrm.com/images/logo/stohrm_diy_logo.png" alt="Logo">
-      
-      <input type="text" placeholder="Please Enter User ID">
-      <input type="password" placeholder="Please Enter Password">
-      
-      <button>Login</button>
-      
-      <div class="extra-links">
-          <a href="#">Forgot password?</a>
-          <a href="#">Help desk</a>
-          
-        </div>
-        <div style="color: 2px solid black; position: relative; top: 125px; color: blue;    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-weight: 400;
-    word-wrap: break-word;
-    hyphens: auto;
-    font-family: GoogleSans !important;
-    line-height: 1.42857143;
-    text-align: center;
-    box-sizing: border-box;
-    color: #262f6c;
-    font-size: 12px;">All rights reserved. STOHRM © 2025</div>
-    </div>
-    
-    
-</div>
+  <script src="script.js"></script>
 </body>
-
 </html>
